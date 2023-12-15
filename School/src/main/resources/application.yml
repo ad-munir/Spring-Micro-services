@@ -1,14 +1,5 @@
 spring:
   application:
     name: schools
-  datasource:
-    url: jdbc:postgresql://localhost:5432/micro
-    username: postgres
-    password: localpost
-    driver-class-name: org.postgresql.Driver
   config:
     import: optional:configserver:http://localhost:8888
-
-application:
-  config:
-    students-url: http://localhost:8090/api/v1/students

@@ -3,19 +3,19 @@ eureka:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka
 
 server:
-  port: 8070
+  port: 8090
 
 spring:
   application:
-    name: schools
+    name: students
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/schools
-    username: postgres
-    password: localpost
+    url: jdbc:postgresql://localhost:5433/students
+    username: mounir
+    password: mounir
   jpa:
     hibernate:
       ddl-auto: update
